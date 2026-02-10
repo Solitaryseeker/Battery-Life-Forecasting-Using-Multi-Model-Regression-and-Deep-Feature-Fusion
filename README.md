@@ -30,24 +30,6 @@ The goal is to build a **robust and generalizable battery life forecasting frame
 
 ---
 
-## Problem Statement
-
-Lithium-ion batteries lose capacity over repeated charge–discharge cycles. Accurate forecasting of:
-
-- **Cycle Life**
-- **Capacity Fade**
-- **Remaining Useful Life (RUL)**
-
-is difficult due to:
-
-- Nonlinear aging behavior  
-- Measurement noise  
-- High-dimensional time-series signals  
-- Complex voltage–capacity relationships  
-
-This project proposes a **hybrid multi-model regression system with deep feature fusion** to handle these challenges.
-
----
 
 ## System Methodology
 
@@ -116,5 +98,13 @@ These metrics assess prediction accuracy and model reliability.
 
 ## Repository Structure
 
+```text
+Battery-Life-Forecasting/
+│
+├── li_bat_cp.ipynb      # Data preprocessing & feature extraction
+├── predict.ipynb        # Model training, feature fusion, evaluation
+├── dataset/             # Battery dataset (if included)
+└── README.md            # Documentation
+```
 
 
