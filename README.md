@@ -103,7 +103,6 @@ Battery-Life-Forecasting/
 │
 ├── li_bat_cp.ipynb      # Data preprocessing & feature extraction
 ├── predict.ipynb        # Model training, feature fusion, evaluation
-├── dataset/             # Battery dataset (if included)
 └── README.md            # Documentation
 ```
 
