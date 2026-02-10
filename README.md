@@ -1,78 +1,120 @@
 # Battery Life Forecasting Using Multi-Model Regression and Deep Feature Fusion
 
-## Overview
+## Project Overview
 
-Accurate prediction of lithium-ion battery life is essential for electric vehicles, energy storage systems, and battery management systems. Battery degradation is highly nonlinear and influenced by complex electrochemical processes, making traditional single-model approaches insufficient.
+This project focuses on **predicting the life cycle and degradation behavior of lithium-ion batteries** using a hybrid data-driven approach. Lithium-ion battery health prediction is a critical challenge in:
 
-This project presents a **hybrid battery life prediction framework** that integrates:
+- Electric Vehicles (EVs)
+- Energy Storage Systems (ESS)
+- Smart Battery Management Systems (BMS)
 
-- Statistical degradation features  
-- Deep learning–based feature extraction  
-- Multi-model regression  
+Battery degradation is highly nonlinear and depends on complex electrochemical and operational factors. To address this, this project integrates:
 
-The combination of **deep feature fusion** and **ensemble regression modeling** improves robustness and predictive accuracy for battery cycle life and remaining useful life (RUL) estimation.
+✔ Statistical degradation indicators  
+✔ Deep learning–based feature extraction  
+✔ Multi-model regression techniques  
+✔ Feature fusion for improved prediction accuracy  
+
+The goal is to build a **robust and generalizable battery life forecasting framework** capable of estimating cycle life and capacity degradation patterns.
+
+---
+
+## Objectives
+
+- Analyze lithium-ion battery degradation data  
+- Extract meaningful statistical and temporal features  
+- Learn nonlinear degradation patterns using deep learning  
+- Fuse deep and statistical features into a unified representation  
+- Train and compare multiple regression models  
+- Evaluate prediction performance using standard metrics  
 
 ---
 
 ## Problem Statement
 
-Lithium-ion battery health degrades over repeated charge–discharge cycles. Predicting:
+Lithium-ion batteries lose capacity over repeated charge–discharge cycles. Accurate forecasting of:
 
 - **Cycle Life**
 - **Capacity Fade**
 - **Remaining Useful Life (RUL)**
 
-is challenging due to:
+is difficult due to:
 
 - Nonlinear aging behavior  
-- Noisy time-series measurements  
-- Complex relationships between voltage, current, and capacity  
+- Measurement noise  
+- High-dimensional time-series signals  
+- Complex voltage–capacity relationships  
 
-This repository addresses these challenges using a **data-driven hybrid modeling approach**.
+This project proposes a **hybrid multi-model regression system with deep feature fusion** to handle these challenges.
 
 ---
 
-## Methodology
+## System Methodology
 
-The proposed framework consists of four main stages:
+The framework consists of the following stages:
 
 ### 1. Data Preprocessing
-- Loading battery cycling datasets  
-- Cleaning and normalization  
-- Extraction of degradation-related signals  
-- Visualization of aging trends  
+- Load battery cycling dataset  
+- Remove noise and inconsistent values  
+- Normalize signals  
+- Visualize degradation trends  
 
 ### 2. Feature Engineering
+
 Two categories of features are extracted:
 
-**A. Statistical Features**
-- Capacity degradation indicators  
-- Summary statistics from charge/discharge curves  
-- Trend-based features  
+#### A. Statistical Features
+- Capacity degradation metrics  
+- Summary statistics from voltage/capacity curves  
+- Trend-based aging indicators  
 
-**B. Deep Features**
-Deep learning models learn latent nonlinear patterns from time-series battery signals such as:
+#### B. Deep Learning Features
+Deep models learn hidden nonlinear representations from time-series battery signals such as:
+
 - Voltage profiles  
 - Capacity evolution  
-- Cycle behavior  
+- Charge–discharge cycle behavior  
+
+---
 
 ### 3. Deep Feature Fusion
-Statistical and deep features are combined into a unified feature representation, allowing the model to leverage both:
-- Physical degradation characteristics  
-- Data-driven learned representations  
+
+Statistical features and deep features are combined to form a comprehensive feature vector that captures:
+
+- Physical degradation patterns  
+- Learned nonlinear temporal behavior  
+
+This fusion improves model robustness and generalization.
+
+---
 
 ### 4. Multi-Model Regression
-Several regression models are trained and evaluated:
+
+Multiple regression algorithms are trained and compared:
 
 - Linear Regression  
 - Support Vector Regression (SVR)  
 - Random Forest Regressor  
-- Gradient Boosting Models  
-- Neural Network Regressors  
+- Gradient Boosting Regressor  
+- Neural Network Regressor  
 
-Model outputs are compared to determine the most effective predictor.
+The best-performing model is selected based on evaluation metrics.
+
+---
+
+## Evaluation Metrics
+
+Model performance is evaluated using:
+
+- **MAE** — Mean Absolute Error  
+- **RMSE** — Root Mean Square Error  
+- **R² Score** — Goodness of fit  
+
+These metrics assess prediction accuracy and model reliability.
 
 ---
 
 ## Repository Structure
+
+
 
