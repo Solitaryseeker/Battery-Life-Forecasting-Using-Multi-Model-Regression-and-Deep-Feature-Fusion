@@ -82,19 +82,7 @@ Multiple regression algorithms are trained and compared:
 
 The best-performing model is selected based on evaluation metrics.
 
----
 
-## Evaluation Metrics
-
-Model performance is evaluated using:
-
-- **MAE** — Mean Absolute Error  
-- **RMSE** — Root Mean Square Error  
-- **R² Score** — Goodness of fit  
-
-These metrics assess prediction accuracy and model reliability.
-
----
 
 ## Repository Structure
 
